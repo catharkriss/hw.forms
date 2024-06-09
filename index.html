@@ -1,11 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>HTML forms</title>
 </head>
+
 <body>
-  
+  <form action="https://hook.eu2.make.com/3v79iuam6rf96apg3sx7y2almjqck1qc">
+    <div>
+      <label for="fullName">Повне ім'я</label>
+    </div>
+    <div>
+      <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+    </div>
+    <div>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password1">Пароль</label>
+    </div>
+    <div>
+      <input type="password" id="password" name="password1" required>
+    </div>
+    <div>
+      <label for="password2">Підтвердення пароля</label>
+    </div>
+    <div>
+    <input type="password" id="pass_two" name="password2" required>
+    </div>
+    <div>
+      <label for="sex">Стать</label>
+      <input type="radio" id="female" name="sex" value="Жіноча" required>
+      <label for="female">Жіноча</label>
+      <input type="radio" id="male" name="sex" value="Чоловіча" required>
+      <label for="male">Чоловіча</label>
+    </div>
+    <div>
+      <label for="age">Вік</label>
+    </div>
+    <div>
+      <input type="text" size="2" required>
+    </div>
+    <div>
+      <label for="course">Курс</label>
+    </div>
+      <select name="course" id="course" required>
+        <option value="">Виберіть курс</option>
+        <option value="front-end">Front-End</option>
+        <option value="back-end">Back-End</option>
+        <option value="project-management">Project Management</option>
+        <option value="qa-manual">QA Manual</option>
+      </select>
+    <div>
+      <label for="adress">Повна адреса проживання</label>
+    </div>
+    <div>
+      <textarea name="adress" id="adress" placeholder="Країна, регіон, місто/селище, вулиця" rows="5"
+      cols="23" required></textarea>
+    </div>
+    <div>
+      <input type="checkbox" name="agree" required>
+      <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+    </div>
+    <div>
+      <button type="reset">Очистити форму</button>
+      <button type="submit">Зареєструватися</button>
+    </div>
+  </form>
+  <h1><em>Extra</em></h1>
+  <header>
+    <div>
+      <h2>K-pop fandom and preferences survey</h2>
+    </div>
+    <section>
+  <div>
+  <h2>Introduction</h2>
+    <p>Thank you for participating in our K-Pop Fandom and Preferences Survey. This survey is designed to understand your interests and opinions related to K-Pop music and the various aspects of the K-Pop industry.
+  Your responses will help us gain valuable insights into the diverse world of K-Pop.</p>
+  <h2>Instructions</h2>
+    <p>Please answer the following questions to the best of your ability.
+    Your responses will remain anonymous. The survey will take approximately 10-15 minutes to complete.</p>
+  </div>
+</section>
+  </header>
+  <main>
+    <form action="">
+      <fieldset>
+        <legend>Questions:</legend>
+      <div>
+        <label for="fName">1.Full name</label>
+      </div>
+      <div>
+        <input type="text" id="name1" name="fName" placeholder="Enter your full name.." required>
+      </div>
+      <div>
+        <label for="Email">2.Email</label>
+      </div>
+      <div>
+        <input type="email" id="email1" name="Email" placeholder="Enter your email.." required>
+      </div>
+      <div>
+        <label for="birth">3.Date of Birth</label>
+      </div>
+      <div>
+        <input type="date" name="birth" id="birth1" required>
+      </div>
+      <div>
+        <label for="country-of-residence">4.Country of residence</label>
+      </div>
+      <div>
+        <input type="text" id="country-of-residence1" name="country-of-residence" placeholder="Enter your country.." required>
+      </div>
+      <div>
+        <label for="gender">5.Gender</label>
+      </div>
+      <div>
+        <select name="gender" id="gender1" required>
+          <option value="">>Choose your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="non-binary">Non-binary</option>
+          <option value="prever-not-to-say">Prefer not to say</option>
+        </select>
+      </div>
+      <div>
+        <label for="duration">6.How long have you been a K-Pop fan?</label>
+      </div>
+      <div>
+        <select name="duration" id="duration" required>
+          <option value="one-year">Less than 1 year</option>
+          <option value="three-year">1-3 years</option>
+          <option value="four-year">4-6 years</option>
+          <option value="seven-year">7-10 years</option>
+          <option value="ten-year">More than 10 years</option>
+        </select>
+      </div>
+      <div>
+        <label for="days">7.How often do you watch K-Pop music videos or variety shows?</label>
+      </div>
+      <div>
+        <label for="days"><input type="radio" name="days">Daily</label>
+        <br>
+        <label for="days"><input type="radio" name="days">Weekly</label>
+        <br>
+        <label for="days"><input type="radio" name="days">Monthly</label>
+        <br>
+        <label for="days"><input type="radio" name="days">Rarely</label>
+        <br>
+        <label for="days"><input type="radio" name="days">Never</label>
+      </div>
+      <div>
+        <label for="follow">8.Do you follow K-Pop news and updates through dedicated websites or social media?</label>
+      </div>
+      <div>
+        <label for="follow"><input type="radio" name="yes" id="yes">Yes</label>
+      </div>
+      <div>
+        <label for="follow"><input type="radio" name="no" id="no">No</label>
+      </div>
+      <div>
+        <label for="colour">9.What color do you associate kpop with?</label>
+      </div>
+      <div>
+        <input type="color" name="colour" id="colours" required>
+      </div>
+      <div>
+        <label for="fav">10.Which bands from the list below do you listen?</label>
+      </div>
+      <div>
+        <input type="checkbox" name="fav" id="">
+        <label for="fav">ATEEZ</label>
+      </div>
+      <div>
+        <input type="checkbox" name="fav" id="ateez">
+        <label for="fav">XG</label>
+      </div>
+      <div>
+        <input type="checkbox" name="fav" id="bts">
+        <label for="fav">BTS</label>
+      </div>
+      <div>
+        <input type="checkbox" name="fav" id="txt">
+        <label for="fav">TxT</label>
+      </div>
+      <div>
+        <input type="checkbox" name="fav" id="ot">
+        <label for="fav">Other</label>
+      </div>
+      <div>
+        <label for="way">11.How do you usually discover new K-Pop music or artists?</label>
+      </div>
+      <div>
+        <input list="ways" name="ways" required>
+        <datalist id="ways">
+          <option value="Spotify"></option>
+          <option value="Youtube"></option>
+          <option value="X"></option>
+          <option value="Tumbler"></option>
+          <option value="Recommendations from friends"></option>
+          <option value="K-Pop websites or forums"></option>
+          <option value="Other"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="influence">12.What do you believe the future holds for K-Pop in terms of its global reach and influence?</label>
+        <br>
+        <textarea name="influence" id="influence" cols="20" rows="6" placeholder="Enter your text..." required></textarea>
+      </div>
+      <div>
+        <label for="aspects">13.Are there any specific aspects of K-Pop you'd like to see change or evolve in the future?</label>
+        <br>
+        <textarea name="aspects" id="aspects" cols="20" rows="6" placeholder="Enter your text..." required></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="industry">14. How do you think K-Pop has impacted the global music industry?</label>
+        <br>
+        <textarea name="industry" id="industry" cols="20" rows="6" placeholder="Enter your text..." required></textarea>
+      </div>
+      <div>
+        <input type="submit" id="submit" value="Send">
+      </div>
+    </fieldset>
+    </form>
+  </main>
+  <footer>
+    <section>
+      <h2>
+        Thank you for participating! Your answers will help us in the future. We hope it was an enjoyable experience for you!
+      </h2>
+    </section>
+  </footer>
+
+
 </body>
+
 </html>
